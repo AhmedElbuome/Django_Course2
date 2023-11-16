@@ -2,7 +2,7 @@
 
 {% block content %}
 
-{% if name == 'Ahmed' %}
+<!-- {% if name == 'Ahmed' %}
 
     <h3>Hello Ahmed</h3>
 
@@ -29,7 +29,17 @@ blbllblblb
 
     My Name Is Ahmed Elbuome
 
-</p>
+</p> -->
+
+<form method="POST">
+
+    {% csrf_token %}
+
+    {{lf}}
+    
+    <input type="submit" value="save">
+
+</form>
 
 {% endblock content %}
 
